@@ -18,7 +18,7 @@ cd sm64-port-android
 Do this using your default file manager (on AOSP, you can slide on the left and there will be a "Termux" option there), or using Termux
 ```sh
 termux-setup-storage
-cp /sdcard/path/to/your/baserom.z64 ./baserom.us.z64
+cp /storage/emulated/0/baserom.us.z64 ./sm64-port-android
 ```
 
 **Get SDL includes:**
@@ -30,6 +30,7 @@ cp /sdcard/path/to/your/baserom.z64 ./baserom.us.z64
 ```sh
 # if you have more cores available, you can increase the --jobs parameter
 make --jobs 4
+Wait a bit
 ```
 
 **Enjoy your apk:**
